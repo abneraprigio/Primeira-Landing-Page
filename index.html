@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Camila Nogueira | Fonoaudiologia Clínica Especializada</title>
+  <meta name="description" content="Atendimento fonoaudiológico humanizado para crianças e adultos. Tratamento de fala, linguagem, motricidade orofacial, voz e disfagia. Agende sua consulta.">
+  
+  <!-- Fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho de Navegação -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#hero" class="logo" aria-label="Página Inicial">
+          <div class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+              <line x1="12" x2="12" y1="19" y2="22"/>
+            </svg>
+          </div>
+          <span>Dra. Camila Nogueira</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#tratamentos">Tratamentos</a></li>
+          <li><a href="#como-funciona">Como Funciona</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+        </ul>
+
+        <a href="#contato" class="btn btn-primary" id="btn-nav-agendar">
+          <span>Agendar Consulta</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção Hero (Apresentação Principal) -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>Atendimento Humanizado & Especializado</span>
+          </div>
+          <h1 class="hero-title">
+            Transformando a comunicação para uma vida com <span class="gradient-text">mais voz e confiança</span>.
+          </h1>
+          <p class="hero-description">
+            Cuidado fonoaudiológico dedicado para crianças, jovens e adultos. Desenvolvimento da fala, reabilitação da voz, deglutição e comunicação assertiva com embasamento científico e acolhimento.
+          </p>
+          <div class="hero-actions">
+            <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20fonoaudiol%C3%B3gica" target="_blank" class="btn btn-whatsapp" id="btn-hero-whatsapp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.7c.974.551 1.761.815 2.791.815 3.179 0 5.767-2.587 5.768-5.766 0-3.18-2.588-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.748 0-3.393-.456-4.83-1.258l-5.17 1.356 1.379-5.037c-.886-1.488-1.379-3.21-1.379-5.061 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/>
+              </svg>
+              <span>Fale no WhatsApp</span>
+            </a>
+            <a href="#tratamentos" class="btn btn-secondary" id="btn-hero-tratamentos">
+              <span>Conhecer Tratamentos</span>
+            </a>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <h4>+10</h4>
+              <p>Anos de Experiência</p>
+            </div>
+            <div class="metric-item">
+              <h4>+1.200</h4>
+              <p>Pacientes Atendidos</p>
+            </div>
+            <div class="metric-item">
+              <h4>98%</h4>
+              <p>Famílias Satisfeitas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <div class="image-card-frame">
+            <img src="fonoaudiologa.jpg" alt="Dra. Camila Nogueira no consultório de fonoaudiologia" loading="eager">
+          </div>
+
+          <!-- Pílulas flutuantes decorativas -->
+          <div class="floating-pill pill-top">
+            <div class="floating-pill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <div class="floating-pill-text">
+              <strong>CRFa 2-19842</strong>
+              <span>Registro Profissional Ativo</span>
+            </div>
+          </div>
+
+          <div class="floating-pill pill-bottom">
+            <div class="floating-pill-icon" style="background: #e0f2fe; color: #0284c7;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+            </div>
+            <div class="floating-pill-text">
+              <strong>Atendimento Acolhedor</strong>
+              <span>Espaço Lúdico & Clínico</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Sobre Mim -->
+  <section class="about" id="sobre">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-card-info">
+          <div class="about-crfa">CRFa 2-19842 | Fonoaudióloga Clínica</div>
+          <p class="about-quote">
+            "A comunicação é a ponte que nos conecta ao mundo. Ver uma criança soltando as primeiras palavras ou um adulto recuperando sua voz é minha maior realização."
+          </p>
+          <ul class="credentials-list">
+            <li>
+              <div class="check-icon">✓</div>
+              <span>Graduada em Fonoaudiologia pela USP</span>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <span>Especialista em Desenvolvimento da Linguagem Infantil</span>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <span>Certificação em Reabilitação Vocal & Motricidade Orofacial</span>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <span>Mais de uma década de prática clínica ambulatorial e consultório</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-text">
+          <span class="section-tag">Conheça a Especialista</span>
+          <h2 class="section-title">Prazer, sou a Dra. Camila Nogueira</h2>
+          <p>
+            Com mais de 10 anos dedicados à fonoaudiologia, construí uma prática clínica baseada no acolhimento familiar e em intervenções com comprovação científica.
+          </p>
+          <p>
+            Acredito que cada pessoa tem seu próprio ritmo e potencial. Seja na intervenção precoce de atrasos da fala em crianças, na reabilitação vocal de profissionais da voz ou no tratamento de dificuldades de deglutição, meu compromisso é proporcionar um ambiente seguro, estimulante e acolhedor.
+          </p>
+          <p>
+            O consultório conta com materiais lúdicos modernos, recursos terapêuticos atualizados e estrutura confortável para pais e pacientes.
+          </p>
+          <div style="margin-top: 30px;">
+            <a href="#contato" class="btn btn-primary" id="btn-sobre-contato">Agendar Avaliação Inicial</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Tratamentos -->
+  <section class="treatments" id="tratamentos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Áreas de Atuação</span>
+        <h2 class="section-title">Tratamentos Especializados</h2>
+        <p class="section-subtitle">
+          Planos terapêuticos individualizados construídos após rigorosa avaliação diagnóstica para atingir resultados duradouros.
+        </p>
+      </div>
+
+      <div class="treatments-grid">
+        <!-- Card 1 -->
+        <article class="treatment-card">
+          <div class="treatment-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="treatment-title">Atraso e Dificuldades na Fala</h3>
+          <p class="treatment-desc">
+            Intervenção precoce para crianças que demoram a falar, trocam letras (desvios fonológicos) ou têm dificuldade de articulação das palavras.
+          </p>
+          <ul class="treatment-items">
+            <li><span class="bullet"></span> Troca de letras e sons na fala</li>
+            <li><span class="bullet"></span> Atraso no desenvolvimento verbal</li>
+            <li><span class="bullet"></span> Terapia lúdica e estimulação precoce</li>
+          </ul>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="treatment-card">
+          <div class="treatment-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+            </svg>
+          </div>
+          <h3 class="treatment-title">Saúde Vocal e Aperfeiçoamento</h3>
+          <p class="treatment-desc">
+            Reabilitação de rouquidão, nódulos vocais, cansaço ao falar e preparação para professores, cantores, palestrantes e profissionais da voz.
+          </p>
+          <ul class="treatment-items">
+            <li><span class="bullet"></span> Disfonias e rouquidão crônica</li>
+            <li><span class="bullet"></span> Nódulos e pólipos nas cordas vocais</li>
+            <li><span class="bullet"></span> Condicionamento vocal para profissionais</li>
+          </ul>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="treatment-card">
+          <div class="treatment-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+              <line x1="9" y1="9" x2="9.01" y2="9"></line>
+              <line x1="15" y1="9" x2="15.01" y2="9"></line>
+            </svg>
+          </div>
+          <h3 class="treatment-title">Motricidade Orofacial</h3>
+          <p class="treatment-desc">
+            Adequação das funções de respiração oral, mastigação, sucção e deglutição atípica, integrando com tratamentos ortodônticos.
+          </p>
+          <ul class="treatment-items">
+            <li><span class="bullet"></span> Respiração pela boca</li>
+            <li><span class="bullet"></span> Deglutição adaptada / atípica</li>
+            <li><span class="bullet"></span> Bruxismo e tensões mandibulares</li>
+          </ul>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="treatment-card">
+          <div class="treatment-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+            </svg>
+          </div>
+          <h3 class="treatment-title">Dificuldades de Leitura e Escrita</h3>
+          <p class="treatment-desc">
+            Avaliação e acompanhamento de desafios na alfabetização, dislexia, compreensão textual e raciocínio linguístico.
+          </p>
+          <ul class="treatment-items">
+            <li><span class="bullet"></span> Consciência fonológica</li>
+            <li><span class="bullet"></span> Suporte na alfabetização</li>
+            <li><span class="bullet"></span> Avaliação interdisciplinar para Dislexia</li>
+          </ul>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="treatment-card">
+          <div class="treatment-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="treatment-title">Gagueira e Fluência da Fala</h3>
+          <p class="treatment-desc">
+            Técnicas modernas de suavização e controle do fluxo da fala para crianças e adultos, promovendo segurança ao se expressar.
+          </p>
+          <ul class="treatment-items">
+            <li><span class="bullet"></span> Disfluência na infância</li>
+            <li><span class="bullet"></span> Gagueira persistente no adulto</li>
+            <li><span class="bullet"></span> Redução de bloqueios e tensão muscular</li>
+          </ul>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="treatment-card">
+          <div class="treatment-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              <line x1="6" y1="1" x2="6" y2="4"></line>
+              <line x1="10" y1="1" x2="10" y2="4"></line>
+              <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+          </div>
+          <h3 class="treatment-title">Disfagia e Deglutição Segura</h3>
+          <p class="treatment-desc">
+            Reabilitação de dificuldades ao engolir alimentos ou saliva, prevenindo engasgos frequentes e complicações pulmonares em idosos ou pós-AVC.
+          </p>
+          <ul class="treatment-items">
+            <li><span class="bullet"></span> Engasgos frequentes nas refeições</li>
+            <li><span class="bullet"></span> Reabilitação pós-AVC e doenças neurológicas</li>
+            <li><span class="bullet"></span> Adaptação de consistências alimentares</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como Funciona o Atendimento -->
+  <section class="how-it-works" id="como-funciona">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Passo a Passo</span>
+        <h2 class="section-title">Como é o processo de atendimento?</h2>
+        <p class="section-subtitle">
+          Um caminho claro e transparente para acolher as necessidades de cada paciente.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <span class="step-number">01</span>
+          <h3 class="step-title">Avaliação Inicial</h3>
+          <p class="step-desc">
+            Anamnese completa, conversa aprofundada com a família ou paciente e aplicação de testes fonoaudiológicos específicos.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">02</span>
+          <h3 class="step-title">Plano Terapêutico</h3>
+          <p class="step-desc">
+            Definição de metas claras, frequência semanal recomendada e estratégias personalizadas de acordo com o diagnóstico.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">03</span>
+          <h3 class="step-title">Evolução Contínua</h3>
+          <p class="step-desc">
+            Sessões dinâmicas, orientações para a rotina diária em casa e relatórios periódicos de acompanhamento e alta.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="testimonials" id="depoimentos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Histórias Reais</span>
+        <h2 class="section-title">O que dizem os pacientes e famílias</h2>
+        <p class="section-subtitle">
+          Resultados que transformam o dia a dia e renovam a confiança.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Meu filho de 3 anos não falava quase nada. Com a paciência e os jogos lúdicos da Dra. Camila, em poucos meses o vocabulário dele explodiu. Hoje ele conta historinhas o dia todo!"
+          </p>
+          <div class="client-info">
+            <strong>Mariana Ramos</strong>
+            <span>Mãe do Lucas (4 anos)</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Sou professora e vivia sem voz no fim do dia. As técnicas vocais e exercícios de respiração me devolveram a qualidade de vida e a segurança em sala de aula."
+          </p>
+          <div class="client-info">
+            <strong>Renata Silveira</strong>
+            <span>Professora de Ensino Fundamental</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Acompanhamento espetacular no pós-AVC da minha mãe para a recuperação da deglutição. Muito atenciosa, competente e humana. Só temos a agradecer!"
+          </p>
+          <div class="client-info">
+            <strong>Carlos Eduardo Mendes</strong>
+            <span>Familiar de paciente</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Perguntas Frequentes (FAQ) -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tire Suas Dúvidas</span>
+        <h2 class="section-title">Perguntas Frequentes</h2>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Qual a idade certa para levar uma criança à fonoaudióloga?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Não existe idade mínima. A intervenção pode começar já nos primeiros meses (em casos de teste da linguinha e amamentação) ou a partir de 1 ano e meio caso a criança apresente ausência de balbucio, pouco contato visual ou atraso na emissão das primeiras palavras.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Você atende por convênio médico?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Os atendimentos são particulares, o que garante tempo estendido e dedicação exclusiva para cada paciente. Fornecemos nota fiscal e relatório descritivo completo para você solicitar o <strong>reembolso</strong> junto ao seu plano de saúde.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Quanto tempo dura cada sessão de fonoaudiologia?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>As sessões duram em média 45 a 50 minutos, incluindo os exercícios práticos terapêuticos e o feedback orientador para os pais ou familiares ao término.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Vocês oferecem atendimento online?</span>
+            <span class="faq-icon">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! Para determinados tratamentos (como voz profissional, consultoria parental e orientações específicas), a teleconsulta fonoaudiológica regulamentada pelo Conselho Federal de Fonoaudiologia é realizada com total eficácia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Contato -->
+  <section class="contact" id="contato">
+    <div class="container">
+      <div class="contact-box">
+        <div class="contact-details">
+          <h3>Entre em Contato</h3>
+          <p>
+            Agende uma avaliação inicial ou tire suas dúvidas sobre os tratamentos. Estamos prontos para receber você com todo carinho.
+          </p>
+
+          <div class="contact-methods">
+            <a href="https://wa.me/5511999999999" target="_blank" class="contact-method-item" id="link-whatsapp">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.7c.974.551 1.761.815 2.791.815 3.179 0 5.767-2.587 5.768-5.766 0-3.18-2.588-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.748 0-3.393-.456-4.83-1.258l-5.17 1.356 1.379-5.037c-.886-1.488-1.379-3.21-1.379-5.061 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <small>WhatsApp Direto</small>
+                <strong>(11) 99999-9999</strong>
+              </div>
+            </a>
+
+            <a href="tel:+551133334444" class="contact-method-item" id="link-telefone">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <small>Telefone Fixo do Consultório</small>
+                <strong>(11) 3333-4444</strong>
+              </div>
+            </a>
+
+            <div class="contact-method-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <small>E-mail</small>
+                <strong>contato@dracamilanogueira.com.br</strong>
+              </div>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-text">
+                <small>Endereço</small>
+                <strong>Av. Paulista, 1500 - Conjunto 82 - Bela Vista, São Paulo - SP</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário de Mensagem Rápida -->
+        <div class="contact-form">
+          <h4>Solicitar Agendamento</h4>
+          <p>Preencha abaixo e entraremos em contato para confirmar o melhor horário.</p>
+
+          <form id="agendamento-form">
+            <div class="form-group">
+              <label for="nome">Nome Completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome ou do responsável" required>
+            </div>
+
+            <div class="form-group">
+              <label for="telefone">WhatsApp / Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+            </div>
+
+            <div class="form-group">
+              <label for="interesse">Motivo da Consulta</label>
+              <select id="interesse" name="interesse" required>
+                <option value="" disabled selected>Selecione um tratamento</option>
+                <option value="fala">Atraso ou Trocas na Fala</option>
+                <option value="voz">Problemas com a Voz / Rouquidão</option>
+                <option value="motricidade">Mastigação / Respiração Oral</option>
+                <option value="leitura">Dificuldade em Leitura e Escrita</option>
+                <option value="gagueira">Gagueira / Fluência</option>
+                <option value="degluticao">Engasgos / Dificuldade ao Engolir</option>
+                <option value="outro">Outra Necessidade</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem adicional (opcional)</label>
+              <textarea id="mensagem" name="mensagem" rows="3" placeholder="Conte resumidamente o caso ou preferência de turno..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;" id="btn-submit-form">
+              <span>Enviar Pedido de Agendamento</span>
+            </button>
+
+            <div class="form-feedback" id="form-feedback">
+              ✓ Mensagem enviada com sucesso! Entraremos em contato em breve via WhatsApp.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <div class="logo-icon" style="width: 32px; height: 32px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                <line x1="12" x2="12" y1="19" y2="22"/>
+              </svg>
+            </div>
+            <span>Dra. Camila Nogueira</span>
+          </div>
+          <p>
+            Fonoaudiologia humanizada, especializada e comprometida em potencializar a comunicação e qualidade de vida de famílias e profissionais.
+          </p>
+          <p style="margin-top: 10px; font-weight: 600; color: #cbd5e1;">CRFa 2-19842</p>
+        </div>
+
+        <div class="footer-links">
+          <h5>Navegação</h5>
+          <ul>
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#sobre">Sobre a Especialista</a></li>
+            <li><a href="#tratamentos">Tratamentos</a></li>
+            <li><a href="#como-funciona">Metodologia</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#faq">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h5>Horários de Atendimento</h5>
+          <ul>
+            <li>Segunda a Sexta: 08:00 às 19:00</li>
+            <li>Sábados: 08:00 às 13:00</li>
+            <li>Domingos e Feriados: Fechado</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dra. Camila Nogueira - Fonoaudiologia. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante de WhatsApp -->
+  <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20consultas%20com%20a%20fonoaudi%C3%B3loga" target="_blank" class="floating-whatsapp-btn" title="Falar pelo WhatsApp" id="floating-whatsapp" aria-label="Abrir conversa no WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.7c.974.551 1.761.815 2.791.815 3.179 0 5.767-2.587 5.768-5.766 0-3.18-2.588-5.766-5.768-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.748 0-3.393-.456-4.83-1.258l-5.17 1.356 1.379-5.037c-.886-1.488-1.379-3.21-1.379-5.061 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/>
+    </svg>
+  </a>
+
+  <!-- Script simples para interatividade (FAQ e Formulário) -->
+  <script>
+    // Accordion FAQ
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        item.classList.toggle('active');
+      });
+    });
+
+    // Envio do Formulário (Feedback interativo)
+    const form = document.getElementById('agendamento-form');
+    const feedback = document.getElementById('form-feedback');
+
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const nome = document.getElementById('nome').value;
+        const interesse = document.getElementById('interesse').value;
+        feedback.style.display = 'block';
+        feedback.textContent = `Obrigado, ${nome}! Seu pedido de agendamento foi registrado. Entraremos em contato via WhatsApp em breve.`;
+        form.reset();
+      });
+    }
+  </script>
+</body>
+</html>
